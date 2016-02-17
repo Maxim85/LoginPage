@@ -24,10 +24,8 @@ public class MainController {
     public ModelAndView checkUser(@ModelAttribute("userJSP") User user) {
         ModelAndView modelAndView = new ModelAndView();
 
-        //имя представления, куда нужно будет перейти
         modelAndView.setViewName("secondPage");
 
-        //записываем в атрибут userJSP (используется на странице *.jsp объект user
         modelAndView.addObject("userJSP", user);
 
         return modelAndView;
